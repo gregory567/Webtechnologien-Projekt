@@ -1,0 +1,191 @@
+
+/* unvisited link */
+a:link {
+    color:rgb(255, 51, 0);
+}
+  
+/* mouse over link */
+a:hover {
+    color: crimson;
+}
+
+/* selected link */
+a:active {
+    color: hotpink;
+}
+
+/* visited link 
+a:visited {
+    color:rgb(7, 88, 86);
+}
+*/
+
+
+
+:root {
+    --main-radius: 30px;
+    --main-padding: 30px;
+  }
+  
+  h1 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  body {
+    font-family: "Roboto", sans-serif;
+    background-color: #ACC8E5;
+  }
+  
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 25% 25% 25% 25%; /*1fr 1fr 1fr 1fr; == repeat(4, 1fr);*/
+    grid-template-rows: 0.3fr 1.5fr 2fr 1.5fr;
+    /*grid-template-areas can be substituted with grid-column-start, grid-column-end, 
+    grid-column (with corresponding interval or the span property), and grid-row-start, grid-row-end, 
+    grid-row (with corresponding interval or the span property), in the individual grid items below*/
+    /*grid-template-areas is therefore optional here*/
+    grid-template-areas:
+      "nav nav nav nav"
+      "main main main sidebar"
+      "content1 content2 content3 sidebar"
+      "footer footer footer sidebar";
+    grid-column-gap: 5px;
+    grid-row-gap: 5px; /*0.2rem;*/
+    /*grid-gap: for both rows and columns*/
+    font-weight: 800;
+    /*text-transform: uppercase;*/
+    color: #42032C;
+    text-align: center;
+    font-size: 12px;
+    /*to justify entire content:*/
+    /*justify-content: start, end, center, space-around, stretch, ...*/
+    /*align-content: start, end, center, space-around, stretch, ...*/
+    
+    /*to justify items inside of the container:*/
+    /*justify-items: start, end, center, space-around, default: stretch, ...*/
+    /*align-items: start, end, center, space-around, default: stretch, ...*/
+
+    /*justify-items and align-items can be overriden in the individual grid items below with:*/
+    /*justify-self: start, end, center, space-around, default: stretch, ...*/
+    /*align-self: start, end, center, space-around, default: stretch, ...*/
+  }
+
+  nav {
+    background: #ACC8E5;
+    grid-area: nav;
+    /*grid-column: span 4;
+    grid-row: span 1;*/
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+
+  #sidebar {
+    background: #98B2CB;
+    grid-area: sidebar;
+    /*grid-column: span 1;
+    grid-row: span 3;*/
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    margin-bottom: 40px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;  
+  }
+
+  .btn {
+    background-color: #42032C;
+    border: #42032C;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;  
+  }
+
+  main {
+    height: 900px;
+    background: #98B2CB;
+    grid-area: main;
+    /*grid-column: span 3;
+    grid-row: span 1;*/
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+  
+  #content1 {
+    height: 300px;
+    background: #98B2CB;
+    grid-area: content1;
+    /*grid-column: span 1;
+    grid-row: span 1;*/
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;  
+  }
+  
+  #content2 {
+    height: 300px;
+    background: #98B2CB;
+    grid-area: content2;
+    /*grid-column: span 1;
+    grid-row: span 1;*/
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;  
+  }
+  
+  #content3 {
+    height: 300px;
+    background: #98B2CB;
+    grid-area: content3;
+    /*grid-column: span 1;
+    grid-row: span 1;*/
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;  
+  }
+  
+  footer {
+    height: 150px;
+    background: #98B2CB;
+    grid-area: footer;
+    /*grid-column: span 3;
+    grid-row: span 1;*/
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    margin-bottom: 40px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;  
+  }
+  
+  a {
+    text-align: left;
+    /*display: block;*/
+    font-family: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1rem;
+  }
+  
+  /*responsive design with media queries*/
+  
+  @media only screen and (max-width: 550px) {
+    .container {
+      grid-template-columns: 100%; /*1fr;*/
+      grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+      grid-template-areas:
+        "nav"
+        "sidebar"
+        "main"
+        "content1"
+        "content2"
+        "content3"
+        "footer";
+    }
+  }

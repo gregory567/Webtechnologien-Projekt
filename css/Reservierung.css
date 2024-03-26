@@ -1,0 +1,97 @@
+
+body {                                  /* Hauptteil*/ 
+    color: rgb(0, 0, 0);          /* Schriftart in Navbar und "Noch kein Account?" und "Zurück zur"*/
+    background-color: #9DB7D1;           /* Hintergrundfarbe*/
+    font-family: 'Roboto', sans-serif;  /* Alle Schriften in Login und Hast du Account?" und "Zurück zur"*/
+}
+
+nav {                                   /*navbar noch bearbeiten*/
+    background: #9DB7D1;                      /*Navbar Hintergrundfarbe*/
+    font-family: "Roboto", sans-serif;          /*Navbar Schriftart*/
+    border-radius: 25px;                        /*Runde Kanten*/
+    padding-top: 5px;                           /*Höhe des Padding-Bereichs am oberen Rand*/
+    text-align: left;                           /*Linkspositon des Texts*/
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.form-control{                              
+    height: 40px;                              /*Breite der Textfelder*/
+    box-shadow: 0 0 10px rgb(255, 254, 254); /*Schatten in Textfeldern außer Login*/
+    color: #add3e2;                          /*Input Cursor im Textfeld*/
+}
+
+.form-control:focus{
+    border-color: #090b6b;                  /*beim Klick Änderung Farbe des Randes um das Textfeld herum*/
+}
+
+.form-control, .btn{                           /*Alle Textfelder in Login*/  
+    border-radius: 5px;                       /*Runde Kanten*/
+    background-color: #94A3B0;    /*Textfeld-Farbe */
+    min-width: 30px;
+    color: #6C757D; 
+}
+
+.reservation-form {
+    width: 370px;                           /*Breite des Registrierung "Rechtecks"*/
+    margin: auto;                           /*Automatische mittige Postition*/
+    padding: 0px /*0*/;                     /*Abstand des Rechtecks zum oberen Rand */
+}
+
+.reservation-form h2 {
+    color: #000000;                       /*Überschrift "Login" Farbe*/
+    margin: 0 0 15px;                       /* 0 0: Abstand zwischen Rechteck oberer Rand und Login*/
+    /**/                                    /* 15px: Abstand zwischen Textfeld und Login*/
+    position: relative;                     /*Positon der Striche zwischen Login*/
+    text-align: center;                     /*Mittige Postion der Überschrift*/
+}
+
+.reservation-form .form-group {
+    margin-bottom: 20px;                    /*Abstandsgröße zwischen Textfeldern*/                      
+}
+
+.reservation-form form {
+    color: rgb(0, 0, 0);                                    /*Farbe des Registrieren Buttons*/
+    border-radius: 30px;                                      /*Runde Kanten des "Login" Rechtecks*/
+    margin-bottom: 20px;                                      /*Unten Abstand zwischen Rechteck und "Hast du Account?" Text*/
+    margin-top: 30px;                                         /*Oben Abstand zwischen Navbar und Rechteck*/
+    background: #2f505ba3;                                  /*Hintergrundfarbe des Rechtecks*/
+    box-shadow: 7px 7px 7px 1px rgba(85, 82, 82, 0.847);    /*Schattenfarbe und Sättigung unten und rechts*/
+    padding: 30px;                                            /*Abstand zwischen Rechteckskante und dem ganzen Text drinnen*/                                          
+}
+
+.reservation-form .btn {        
+    border-radius: 20px;            /*Runde Kanten des "Login" Buttons*/  
+    font-size: 17px;                /*Schriftgröße des Login*/
+    font-weight:bold;	            /*Schrift fett*/	        
+    min-width: 300px;               /*Minimale Länge des Button*/
+    outline: none !important;       /*Design der Kanten in Login*/
+    color:#2f2f31; 
+}
+
+.reservation-form .btn:hover, .reservation-form .btn:active {
+    background: #2f505ba3;
+    outline: none !important;
+}
+.reservation-form a {
+    color: rgb(123, 123, 123);                          /*Farbe der Links "Log In" und "Homepage"*/
+    text-decoration: rgb(79, 79, 79) underline;         /*Unterlinie bei Links*/
+}
+
+.reservation-form a:hover {
+    color: rgb(157, 57, 57); 
+    text-decoration: rgb(157, 57, 57) underline;       /*Änderung der Farbe auf rot unten*/
+}
+
+.text-center {
+    margin-bottom: 20px;
+}
+
+/*.reservation-form form a {
+    color: #3598dc;
+    text-decoration: none;
+}*/
+
+/*.reservation-form form a:hover {
+    text-decoration: underline;
+}*/

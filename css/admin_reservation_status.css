@@ -1,0 +1,201 @@
+h3 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+nav {                                   /*navbar noch bearbeiten*/
+    background: #ACC8E5;                      /*Navbar Hintergrundfarbe*/
+    font-family: "Roboto", sans-serif;          /*Navbar Schriftart*/
+    border-radius: 25px;                        /*Runde Kanten*/
+    padding-top: 5px;                           /*Höhe des Padding-Bereichs am oberen Rand*/
+    text-align: left;                           /*Linkspositon des Texts*/
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+
+body {                                  /* Hauptteil*/ 
+    color: #112A46;        /* Schriftart in Navbar und "Noch kein Account?" und "Zurück zur"*/
+    background-color: #ACC8E5;        /* Hintergrundfarbe*/
+    font-family: 'Roboto', sans-serif;  /* Alle Schriften in Login und Hast du Account?" und "Zurück zur"*/
+    margin-bottom: 20px;
+}
+
+
+/************************************************/
+
+.form-control{                              
+    height: 40px;                              /*Breite der Textfelder*/
+    box-shadow: 0 0 10px rgb(255, 254, 254); /*Schatten in Textfeldern außer Login*/
+    color: #add3e2;                          /*Input Cursor im Textfeld*/
+}
+
+.form-control:focus{
+    border-color: #090b6b;                  /*beim Klick Änderung Farbe des Randes um das Textfeld herum*/
+}
+
+.form-control, .btn{                           /*Alle Textfelder in Login*/  
+    border-radius: 5px;                       /*Runde Kanten*/
+    background-color: #94A3B0;    /*Textfeld-Farbe */
+    min-width: 30px;
+    color: #6C757D; 
+}
+
+.reservation-form {
+    width: 370px;                           /*Breite des Registrierung "Rechtecks"*/
+    margin: auto;                           /*Automatische mittige Postition*/
+    padding: 0px /*0*/;                     /*Abstand des Rechtecks zum oberen Rand */
+}
+
+.reservation-form h2 {
+    color: #000000;                       /*Überschrift "Login" Farbe*/
+    margin: 0 0 15px;                       /* 0 0: Abstand zwischen Rechteck oberer Rand und Login*/
+    /**/                                    /* 15px: Abstand zwischen Textfeld und Login*/
+    position: relative;                     /*Positon der Striche zwischen Login*/
+    text-align: center;                     /*Mittige Postion der Überschrift*/
+}
+
+.reservation-form .form-group {
+    margin-bottom: 20px;                    /*Abstandsgröße zwischen Textfeldern*/                      
+}
+
+.reservation-form form {
+    color: rgb(0, 0, 0);                                    /*Farbe des Registrieren Buttons*/
+    border-radius: 30px;                                      /*Runde Kanten des "Login" Rechtecks*/
+    margin-bottom: 20px;                                      /*Unten Abstand zwischen Rechteck und "Hast du Account?" Text*/
+    margin-top: 30px;                                         /*Oben Abstand zwischen Navbar und Rechteck*/
+    background: #2f505ba3;                                  /*Hintergrundfarbe des Rechtecks*/
+    box-shadow: 7px 7px 7px 1px rgba(85, 82, 82, 0.847);    /*Schattenfarbe und Sättigung unten und rechts*/
+    padding: 30px;                                            /*Abstand zwischen Rechteckskante und dem ganzen Text drinnen*/                                          
+}
+
+.reservation-form .btn {        
+    border-radius: 20px;            /*Runde Kanten des "Login" Buttons*/  
+    font-size: 17px;                /*Schriftgröße des Login*/
+    font-weight:bold;	            /*Schrift fett*/	        
+    min-width: 300px;               /*Minimale Länge des Button*/
+    outline: none !important;       /*Design der Kanten in Login*/
+    color:#2f2f31; 
+}
+
+.reservation-form .btn:hover, .reservation-form .btn:active {
+    background: #2f505ba3;
+    outline: none !important;
+}
+.reservation-form a {
+    color: rgb(123, 123, 123);                          /*Farbe der Links "Log In" und "Homepage"*/
+    text-decoration: rgb(79, 79, 79) underline;         /*Unterlinie bei Links*/
+}
+
+.reservation-form a:hover {
+    color: rgb(157, 57, 57); 
+    text-decoration: rgb(157, 57, 57) underline;       /*Änderung der Farbe auf rot unten*/
+}
+
+.text-center {
+    margin-bottom: 20px;
+}
+
+/**********************************************/
+
+/* Color for error messages */
+.error {
+    color: #FF0000; /* red */
+}
+
+/* Color for success messages */
+.success {
+    color: #00FF00; /* lime */
+}
+
+/*
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+*/
+
+/* Table styling */
+table {
+    font-family: 'Roboto', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    border-radius: 6px;
+}
+
+table.center {
+    display: flex;
+    justify-content: center; /* center the table horizontally */
+    align-items: center; /* center the table vertically */
+    width: 75%; /* set the width of the table to 75% of its parent container */
+    max-width: 800px; /* set the maximum width of the table to 800px */
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td, th {
+    border: 1px solid #466281;
+    padding: 8px;
+}
+
+th {
+    background-color: #97AFC8; /* light gray */
+    font-weight: bold;
+    flex: 0 0 25%; /* main columns will take up 25% of the table's width */
+    text-align: left; /* align text to the left */
+}
+
+td {
+    flex: 1; /* the other columns will take up the remaining space */
+    text-align: center; /* align text to the center */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 2000px; 
+}
+
+select {
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+}
+
+/* Button styling */
+.btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #ACC8E5;
+    color: #112A46;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #97AFC8;
+}
+
+.btn-outline {
+    background-color: #93ABC3;
+    color: #000000;
+    border: 2px solid #ACC8E5;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
